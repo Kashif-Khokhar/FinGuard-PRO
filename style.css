@@ -1,0 +1,29 @@
+:root {
+    --primary: #2563eb;
+    --dark: #0f172a;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+
+body { background: #f1f5f9; padding: 20px; color: var(--dark); }
+
+.finguard-app { max-width: 900px; margin: auto; }
+
+header { margin-bottom: 30px; }
+.logo { font-size: 1.8rem; font-weight: 800; }
+.text-blue { color: var(--primary); }
+.badge { background: var(--primary); color: white; font-size: 10px; padding: 2px 8px; border-radius: 5px; vertical-align: middle; }
+
+.dashboard-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 20px; margin-bottom: 20px; }
+
+.card { background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+input, select, button { width: 100%; padding: 12px; margin: 10px 0; border-radius: 10px; border: 1px solid #e2e8f0; font-size: 0.9rem; }
+
+button { background: var(--primary); color: white; border: none; font-weight: bold; cursor: pointer; transition: 0.3s; }
+button:hover { opacity: 0.9; transform: translateY(-2px); }
+
+#transactionList { list-style: none; margin-top: 15px; }
+.t-item { display: flex; justify-content: space-between; padding: 12px; border-bottom: 1px solid #f1f5f9; font-size: 0.9rem; }
+.t-cat { font-weight: bold; color: var(--primary); }

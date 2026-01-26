@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FinGuard | Pro Expense Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="finguard-app">
+        <header>
+            <div class="logo">Fin<span class="text-blue">Guard</span> <span class="badge">PRO</span></div>
+            <p>Enterprise Expense Management System</p>
+        </header>
+
+        <div class="dashboard-grid">
+            <div class="card entry-form">
+                <h3>Add Transaction</h3>
+                <input type="text" id="desc" placeholder="Expense Description (e.g. Fuel)">
+                <input type="number" id="amount" placeholder="Amount (PKR)">
+                <select id="category">
+                    <option value="Food">Food & Dining</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Bills">Utilities/Bills</option>
+                    <option value="Shopping">Shopping</option>
+                </select>
+                <button onclick="addEntry()">Record Transaction</button>
+            </div>
+
+            <div class="card chart-container">
+                <h3>Spending Analytics</h3>
+                <canvas id="expenseChart"></canvas>
+            </div>
+        </div>
+
+        <div class="card history">
+            <h3>Recent Transactions</h3>
+            <ul id="transactionList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
