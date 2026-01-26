@@ -1,9 +1,3 @@
-Bilkul sahi, samajh gaya! Maine pehle ghalti se React mention kar diya tha, lekin ab main isse Pure HTML, CSS, aur JavaScript (Vanilla JS) ke mutabiq update kar raha hoon.
-
-Jab koi project sirf HTML/CSS/JS se bana hota hai, toh recruiters aur bosses is baat se impress hote hain ki aapki Core Fundamentals par pakar kitni mazboot hai.
-
-Ye raha FinGuard PRO ka updated professional README.md:
-
 🛡️ FinGuard PRO: Enterprise Expense Analytics
 FinGuard PRO is a high-performance personal finance and expense management system. Built using core web technologies, it provides a lightweight yet powerful solution for recording transactions, categorizing spending, and visualizing financial health through a professional-grade analytics dashboard.
 
