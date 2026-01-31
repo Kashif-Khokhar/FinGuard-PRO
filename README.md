@@ -2,7 +2,7 @@
 
 FinGuard PRO is a next-generation financial management dashboard designed for high-fidelity expense tracking. It combines a sophisticated **Glassmorphic UI** with real-time semantic analytics to give users a clear, interactive view of their spending patterns.
 
-🚀 **Explore the Dashboard:** [FinGuard PRO Live](https://kashif-khokhar.github.io/FinGuard-Personal-Finance-Expense-Tracker/)
+🚀 **Explore the Dashboard:** [FinGuard PRO Live](https://kashif-khokhar.github.io/FinGuard-Pro/)
 
 ---
 
