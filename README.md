@@ -1,6 +1,6 @@
-# 🛡️ FinGuard PRO: High-Fidelity Expense Analytics
+# 🛡️ FinGuard PRO: High-Fidelity Expense Analytics (React + Vite)
 
-FinGuard PRO is a next-generation financial management dashboard designed for high-fidelity expense tracking. It combines a sophisticated **Glassmorphic UI** with real-time semantic analytics to give users a clear, interactive view of their spending patterns.
+FinGuard PRO is a next-generation financial management dashboard designed for high-fidelity expense tracking. It has been modernized from a static structure to a modular **React + Vite** application, combining a sophisticated **Glassmorphic UI** with real-time semantic analytics.
 
 🚀 **Explore the Dashboard:** [FinGuard PRO Live](https://kashif-khokhar.github.io/FinGuard-PRO/)
 
@@ -9,57 +9,65 @@ FinGuard PRO is a next-generation financial management dashboard designed for hi
 ## ✨ Premium Features
 
 ### 📊 Semantic Analytics Engine
-- **Center-Label Visualization**: High-impact doughnut chart powered by `Chart.js` with integrated "Total Spent" center-text.
-- **Hero Metrics**: Three real-time indicators for **Gross Expenditure**, **Transaction Volume**, and **Core Exposure** (Top Category).
-- **Segmented breakdown**: Automatically categorizes spending across 11 distinct sectors including Food, Transport, Bills, Groceries, and more.
+- **React-Powered Visualization**: Interactive doughnut charts using `react-chartjs-2` with dynamic center-text labels.
+- **Hero Metrics**: Real-time calculated indicators for **Gross Expenditure**, **Transaction Volume**, and **Core Exposure** (Top Category).
+- **Segmented breakdown**: Categorizes spending across 11 distinct sectors with a vibrant, high-contrast color palette.
 
 ### 🎨 Elite Visual Identity
-- **Glassmorphic UI**: Soft transparency, `backdrop-blur` effects, and delicately refined borders for an "Enterprise SaaS" aesthetic.
-- **Mesh Backgrounds**: A dynamic, multi-layered background system with animated gradients and pulsing accent blobs.
-- **Micro-Interactions**: Hover-lift effects, slide-up animations, and smooth state transitions for total immersion.
-- **High-Visibility Favicon**: A sleek, circular glassmorphic shield icon for professional branding across browser tabs.
+- **Modern Glassmorphism**: Advanced `backdrop-filter` effects and semi-transparent layers for an "Enterprise SaaS" aesthetic.
+- **Tailwind CSS v4 Engine**: Powered by the latest Tailwind engine for high-performance, utility-first styling.
+- **Mesh Backgrounds**: Dynamic, multi-layered background system with CSS-animated mesh gradients.
+- **Micro-Interactions**: Hover-lift effects, slide-up list animations, and reactive "Authorize" buttons.
 
-### ⚙️ Lifecycle Management
-- **Full CRUD Operations**: Intuitive interface for Adding, Editing, and Removing transactions.
-- **State Persistence**: Seamless synchronization with `localStorage` ensures your data remains secure across sessions.
-- **Responsive Matrix**: A 12-column grid layout that adapts perfectly from desktop monitors to mobile devices.
+### ⚙️ Architecture & Lifecycle
+- **Component-Based Design**: Modular architecture with dedicated components for Header, Stats, Form, Chart, and List.
+- **Robust Persistence**: Automatic state synchronization with `localStorage` for cross-session data security.
+- **Unique Entry Tracking**: Every transaction is assigned a unique ID for stable React rendering and reliable state updates.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Tailwind CSS**: Utility-first framework for a modern, responsive design system.
-- **Chart.js**: Dynamic data visualization for spending insights.
-- **JavaScript (ES6+)**: Pure logic for state management, data persistence, and real-time DOM updates.
-- **Google Fonts**: `Outfit` typography for a clean, premium financial look.
-- **Lucide-style SVGs**: Interactive iconography for intuitive navigation.
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Charts**: [react-chartjs-2](https://react-chartjs-2.js.org/) & [Chart.js](https://www.chartjs.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Typography**: `Outfit` via [Google Fonts](https://fonts.google.com/)
 
 ---
 
 ## 📦 Getting Started
 
-FinGuard PRO is a static web application. To experience it locally:
+To run FinGuard PRO on your local machine:
 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Kashif-Khokhar/FinGuard-Personal-Finance-Expense-Tracker.git
    ```
-2. **Navigate & Launch**:
+2. **Install Dependencies**:
    ```bash
    cd FinGuard-Personal-Finance-Expense-Tracker
-   open index.html
+   npm install
+   ```
+3. **Launch Development Server**:
+   ```bash
+   npm run dev
+   ```
+4. **Build for Production**:
+   ```bash
+   npm run build
    ```
 
 ---
 
-## 📈 Completed Roadmap
-- [x] **Chart.js Integration**: Fully implemented with custom center-text plugin.
-- [x] **Local Storage**: Auto-persistence for all financial data.
-- [x] **Premium UI**: 100% Tailwind-powered glassmorphic overhaul.
-- [x] **CRUD Operations**: Complete Edit/Delete lifecycle logic.
+## 📈 Evolution Timeline
+- [x] **Core Logic**: Initial JS development of CRUD and storage.
+- [x] **Glassmorphic Overhaul**: Premium UI implementation with Tailwind.
+- [x] **React Migration**: Modular architecture conversion with Vite.
+- [x] **Tailwind v4 Upgrade**: Modernized CSS engine for peak performance.
 
 ---
 
 ## 📄 License
 This project is licensed under the MIT License.
-
