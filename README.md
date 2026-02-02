@@ -1,6 +1,6 @@
-# 🛡️ FinGuard PRO: High-Fidelity Expense Analytics
+# 🛡️ FinGuard PRO: High-Fidelity Expense Analytics (React + Vite)
 
-FinGuard PRO is a next-generation financial management dashboard designed for high-fidelity expense tracking. It has been modernized from a static structure to a modular **React + Vite** application, combining a sophisticated **Glassmorphic UI** with real-time semantic analytics.
+FinGuard PRO is a next-generation financial management dashboard designed for high-fidelity expense tracking. Modernized from a static structure to a modular **React + Vite** application, it combines a sophisticated **Glassmorphic UI** with real-time semantic analytics and temporal intelligence.
 
 🚀 **Explore the Dashboard:** [FinGuard PRO Live](https://fin-guard-pro.vercel.app/)
 
@@ -10,8 +10,9 @@ FinGuard PRO is a next-generation financial management dashboard designed for hi
 
 ### 📊 Semantic Analytics Engine
 - **React-Powered Visualization**: Interactive doughnut charts using `react-chartjs-2` with dynamic center-text labels.
-- **Hero Metrics**: Real-time calculated indicators for **Gross Expenditure**, **Transaction Volume**, and **Core Exposure** (Top Category).
-- **Segmented breakdown**: Categorizes spending across 11 distinct sectors with a vibrant, high-contrast color palette.
+- **Temporal Grouping**: Transactions are automatically organized into **Monthly Sections** for clear historical tracking.
+- **Hero Metrics**: Real-time calculated indicators for **Gross Expenditure**, **Transaction Volume**, and **Core Exposure**.
+- **Monthly Burn Tracking**: Integrated sub-totals for each month to monitor spending trends over time.
 
 ### 🎨 Elite Visual Identity
 - **Modern Glassmorphism**: Advanced `backdrop-filter` effects and semi-transparent layers for an "Enterprise SaaS" aesthetic.
@@ -65,6 +66,7 @@ To run FinGuard PRO on your local machine:
 - [x] **Core Logic**: Initial JS development of CRUD and storage.
 - [x] **Glassmorphic Overhaul**: Premium UI implementation with Tailwind.
 - [x] **React Migration**: Modular architecture conversion with Vite.
+- [x] **Temporal Intelligence**: Added Monthly Grouping and Sub-totals.
 - [x] **Tailwind v4 Upgrade**: Modernized CSS engine for peak performance.
 
 ---

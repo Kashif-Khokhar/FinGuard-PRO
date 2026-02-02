@@ -35,26 +35,40 @@ function App() {
   const addTransaction = (data) => {
     if (editIndex > -1) {
       const newTransactions = [...transactions];
-      newTransactions[editIndex] = { ...data, id: transactions[editIndex].id, date: transactions[editIndex].date };
+      newTransactions[editIndex] = { 
+        ...data, 
+        id: transactions[editIndex].id, 
+        date: transactions[editIndex].date,
+        timestamp: transactions[editIndex].timestamp || Date.now()
+      };
       setTransactions(newTransactions);
       setEditIndex(-1);
       setEditData(null);
     } else {
-      setTransactions([{ ...data, id: Date.now(), date: new Date().toLocaleDateString() }, ...transactions]);
+      const now = new Date();
+      setTransactions([{ 
+        ...data, 
+        id: Date.now(), 
+        date: now.toLocaleDateString(),
+        timestamp: now.getTime()
+      }, ...transactions]);
     }
   };
 
-  const deleteTransaction = (index) => {
+  const deleteTransaction = (id) => {
     if (window.confirm("Are you sure you want to remove this data point?")) {
-      const newTransactions = transactions.filter((_, i) => i !== index);
+      const newTransactions = transactions.filter((t) => t.id !== id);
       setTransactions(newTransactions);
     }
   };
 
-  const handleEdit = (index) => {
-    setEditIndex(index);
-    setEditData(transactions[index]);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const handleEdit = (id) => {
+    const index = transactions.findIndex(t => t.id === id);
+    if (index > -1) {
+      setEditIndex(index);
+      setEditData(transactions[index]);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   const cancelEdit = () => {
