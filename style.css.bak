@@ -1,0 +1,112 @@
+:root {
+    --primary: #4f46e5;
+    --primary-light: #818cf8;
+    --glass: rgba(255, 255, 255, 0.45);
+    --glass-border: rgba(255, 255, 255, 0.6);
+}
+
+/* Custom Mesh Gradient Animation */
+@keyframes mesh {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(-45deg, #f8fafc, #f1f5f9, #eef2ff, #f8fafc);
+    background-size: 400% 400%;
+    animation: mesh 15s ease infinite;
+}
+
+/* Glassmorphic Refinements */
+.glass-effect {
+    background: var(--glass);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid var(--glass-border);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cbd5e1;
+}
+
+/* Entry Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.t-item {
+    animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Pulse for Edit Mode */
+@keyframes activePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(79, 70, 229, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(79, 70, 229, 0);
+    }
+}
+
+.edit-mode {
+    border-color: var(--primary) !important;
+    animation: activePulse 2s infinite;
+}
+
+/* Button & Card Hover Effects */
+.hover-lift {
+    transition: transform 0.25s cubic-bezier(0.1, 0.5, 0.5, 1), box-shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.08);
+}
+
+/* Input Focus Glow */
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.08);
+}
+
+/* Chart Center Label Fix */
+canvas {
+    user-select: none;
+    pointer-events: auto;
+}
