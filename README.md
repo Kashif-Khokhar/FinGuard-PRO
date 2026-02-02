@@ -1,8 +1,8 @@
-# 🛡️ FinGuard PRO: High-Fidelity Expense Analytics (React + Vite)
+# 🛡️ FinGuard PRO: High-Fidelity Expense Analytics
 
 FinGuard PRO is a next-generation financial management dashboard designed for high-fidelity expense tracking. It has been modernized from a static structure to a modular **React + Vite** application, combining a sophisticated **Glassmorphic UI** with real-time semantic analytics.
 
-🚀 **Explore the Dashboard:** [FinGuard PRO Live](https://kashif-khokhar.github.io/FinGuard-PRO/)
+🚀 **Explore the Dashboard:** [FinGuard PRO Live](https://fin-guard-pro.vercel.app/)
 
 ---
 
